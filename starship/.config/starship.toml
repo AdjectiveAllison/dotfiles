@@ -1,0 +1,57 @@
+# Get editor completions based on the config schema
+# What does this actually do?!
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# TODO: Continue reading through starship config here: https://starship.rs/config/#direnv
+
+
+[directory]
+read_only = " 󰌾"
+truncate_to_repo = false
+truncation_length = 5
+fish_style_pwd_dir_length = 1
+#I might want to consider changing style default
+#style = 'bold cyan'
+
+[c]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+
+[haskell]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[kotlin]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[zig]
+symbol = " "
