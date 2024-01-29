@@ -1,3 +1,4 @@
 {
-    "workbench.colorTheme": "Gruvbox Material Dark"
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "editor.fontFamily": "'OxygenMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace"
 }
