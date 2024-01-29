@@ -1,0 +1,1 @@
+set -gx XDG_CURRENT_DESKTOP river
