@@ -162,3 +162,5 @@ riverctl rule-add -app-id "bar" csd
 #rivertile -view-padding 6 -outer-padding 6 &
 
 riverctl float-filter-add "flameshot"
+
+xdg_desktop_for_river_setup
