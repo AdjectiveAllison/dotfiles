@@ -46,6 +46,6 @@ done
 for dir in "${stow_dirs[@]}"; do
     find "$dir" -maxdepth 1 ! -path "$dir" -type d -not -name '.' | while read -r subdir; do
         printf "Stowing %s\n" "${subdir#"$dir"/}"
-        stow --target="$HOME" --dir="$dir" "${subdir#"$dir"/}"
+        stow --target="$HOME" -R --dir="$dir" "${subdir#"$dir"/}"
     done
 done
