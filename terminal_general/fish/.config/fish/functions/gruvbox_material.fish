@@ -1,36 +1,35 @@
-#All colors manually fetched from gruvbox-material-dark vscode extension.
+function gruvbox_material
+    set -g fish_color_normal  d4be98 --background=282828
 
-#this is a guess
-set -U fish_color_normal D4BE98
+    set -g fish_color_command a9b665
 
-#pretty confident on this one
-set -U fish_color_command 7DAEA3
+    set -g fish_color_quote d8a657
+    set -g fish_color_redirection d8a657
 
-# feeling good about it.
-set -U fish_color_quote D8A657
+    set -g fish_color_end  d4be98
 
-# TODO: What is redirection, what color do we use.
-#set fish_color_redirection NO IDEA
+    set -g fish_color_error  ea6962
 
-#meh this one is okay
-set -U fish_color_end E78A4E
+    set -g fish_color_param d4be98
 
-# Confident on this one.
-set -U fish_color_error EA6962
+    set -g fish_color_comment  928374 --italics
+    set -g fish_color_match  --background=45403d
+    set -g fish_color_search_match  45403d --background=a89984
 
-#setting to same as normal, we'll see how it looks.
-set -U fish_color_param D4BE98
+    set -g fish_color_operator d4be98
 
-#Same as vscode comment.
-set -U fish_color_comment 928374
+    set -g fish_color_escape a9b665
 
+    set -g fish_color_autosuggestion  928374 --italics
 
-# TODO: No idea what match is:
-#set fish_color_match ??
-#set to bright red temporarily
-#set fish_color_match FF3333
+    set -g fish_color_valid_path  --underline
 
+    set -g fish_color_history_current d8a657
 
-#these should both be decent but idk what they even do honestly.
-set -U fish_color_selection --background=A89984
-set -U fish_color_search_match --background=A89984
+    set -g fish_color_selection  --background=45403d
+    set -g fish_pager_color_completion  ddc7a1
+
+    set -g fish_pager_color_prefix  d4be98 --bold
+    set -g fish_pager_color_description  928374 --italics
+    set -g fish_pager_color_progress  d8a657 --bold
+end
