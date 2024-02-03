@@ -6,5 +6,6 @@
     "zig.zls.path": "/home/allison/.config/Code - OSS/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "zig.zls.warnStyle": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "zig.initialSetupDone": true
+    "zig.initialSetupDone": true,
+    "git.autofetch": true
 }
