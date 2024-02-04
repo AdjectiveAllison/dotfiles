@@ -1,0 +1,4 @@
+aur_helper: paru
+#warn_not_symlinks: false
+# TODO: Setup pacderf and decide how to use it effectively.
+#we're gonna get inspiration from here: https://github.com/thdxr/environment/tree/master/pacdef
