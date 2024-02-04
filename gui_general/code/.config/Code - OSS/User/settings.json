@@ -7,5 +7,6 @@
     "zig.zls.warnStyle": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "zig.initialSetupDone": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "editor.wordWrap": "on"
 }
