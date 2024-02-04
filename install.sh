@@ -42,6 +42,8 @@ for dir in "${!dirs[@]}"; do
     fi
 done
 
+#TODO: mkdir -p directories so that stow doesn't do weird symlink stuff with them.
+
 # Stow directories
 for dir in "${stow_dirs[@]}"; do
     find "$dir" -maxdepth 1 ! -path "$dir" -type d -not -name '.' | while read -r subdir; do
