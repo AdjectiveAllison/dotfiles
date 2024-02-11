@@ -11,3 +11,4 @@ image/png=vivaldi-stable.desktop
 image/jpeg=vivaldi-stable.desktop
 
 text/plain=code-oss.desktop
+x-scheme-handler/webcal=vivaldi-stable.desktop
