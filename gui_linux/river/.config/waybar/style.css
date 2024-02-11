@@ -85,6 +85,7 @@ button:hover {
 #custom-media,
 #tray,
 #mode,
+#tags
 #idle_inhibitor,
 #scratchpad,
 #mpd {
@@ -198,6 +199,23 @@ label:focus {
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
+}
+
+#tags{
+    background-color: #171717;
+}
+
+#tags button.occupied {
+    color: skyblue;
+    background-color: #272727;
+}
+#tags button.focused {
+    color: black;
+    background-color: white;
+}
+#tags button.urgent{
+    color: red;
+    background-color:white;
 }
 
 #temperature {
