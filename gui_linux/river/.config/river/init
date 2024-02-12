@@ -98,7 +98,8 @@ riverctl map normal Super 0 set-focused-tags $all_tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
 # Super+Space to toggle float
-riverctl map normal Super Space toggle-float
+# commented to accomodate tofi.
+# riverctl map normal Super Space toggle-float
 
 # Super+F to toggle fullscreen
 riverctl map normal Super F toggle-fullscreen
@@ -162,9 +163,15 @@ riverctl rule-add -app-id "bar" csd
 #rivertile -view-padding 6 -outer-padding 6 &
 
 
+#------------------------------------------------------------
 # CUSTOM CHANGES:
-#TODO: Get ghostty spawning in river instead of foot!
 
+#TODO: sunset foot spawn binding after confirming ghostty works consistently.
+riverctl map normal Super Z spawn ghostty
+
+#TODO: Figure out how to map tofirun and drun to the same thing so I don't need two.
+riverctl map normal Super Space spawn tofi-run
+riverctl map normal Super+Shift Space spawn tofi-drun
 
 # my screenshottings are `grim -g "$(slurp)"` for a specific region and `grim -g "$(slurp)" - | swappy -f -` to annotate it afterwards. and just `grim` to capture it all
 
