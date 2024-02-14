@@ -170,8 +170,8 @@ riverctl rule-add -app-id "bar" csd
 riverctl map normal Super Z spawn ghostty
 
 #TODO: Figure out how to map tofirun and drun to the same thing so I don't need two.
-riverctl map normal Super Space spawn tofi-run
-riverctl map normal Super+Shift Space spawn tofi-drun
+riverctl map normal Super Space spawn 'exec $(tofi-run)'
+riverctl map normal Super+Shift Space spawn 'exec $(tofi-drun)'
 
 # my screenshottings are `grim -g "$(slurp)"` for a specific region and `grim -g "$(slurp)" - | swappy -f -` to annotate it afterwards. and just `grim` to capture it all
 
