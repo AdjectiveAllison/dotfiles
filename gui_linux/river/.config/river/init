@@ -159,12 +159,13 @@ riverctl rule-add -app-id "bar" csd
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
-#riverctl default-layout rivertile
-#rivertile -view-padding 6 -outer-padding 6 &
+riverctl default-layout rivertile
+rivertile -view-padding 6 -outer-padding 6 &
 
 
 #------------------------------------------------------------
 # CUSTOM CHANGES:
+riverctl focus-follows-cursor normal
 
 #TODO: sunset foot spawn binding after confirming ghostty works consistently.
 riverctl map normal Super Z spawn ghostty
