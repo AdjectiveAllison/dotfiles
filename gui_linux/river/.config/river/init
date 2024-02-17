@@ -175,7 +175,14 @@ riverctl map normal Super Space spawn 'exec $(tofi-run)'
 riverctl map normal Super+Shift Space spawn 'exec $(tofi-drun)'
 
 # toggle between dvorak programmer and us with ctrl space.
-riverctl keyboard-layout -options "grp:ctrl_space_toggle" "us,dvp"
+# TODO: how to switch displays easily while in programmer dvorak
+# riverctl keyboard-layout -variant "dvorak" "us"
+
+riverctl map normal Super+Shift R spawn 'riverctl keyboard-layout -variant "dvorak" "us"'
+
+riverctl map normal Super+Shift P spawn 'riverctl keyboard-layout "us"'
+# riverctl keyboard-layout "us"
+
 
 # my screenshottings are `grim -g "$(slurp)"` for a specific region and `grim -g "$(slurp)" - | swappy -f -` to annotate it afterwards. and just `grim` to capture it all
 

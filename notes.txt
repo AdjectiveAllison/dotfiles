@@ -1,0 +1,23 @@
+Keyboard layout design:
+
+initial gut instinct on the key priority/preference from https://www.patrick-wied.at/projects/heatmap-keyboard/:
+
+e is the super letter across all use cases!!!!!!!!
+
+My writings:
+very popular: e
+pretty popular: a, t, i, o, n
+runner ups: h, d, r, s
+barely touched: q, z, x, v, j, k
+
+zig code:
+very popular: e
+pretty popular: a, s, r, t, o, n, shift
+runner ups: i, .>, p, l, c, ;:
+barely touched: q, z, x, j
+
+linux history export:
+very popular: e, o
+pretty popular: a, s, r, t, i, n, -_, /?, c
+runner ups: shift, l, p, d
+barely touched: q, z, j, x, "<,",
