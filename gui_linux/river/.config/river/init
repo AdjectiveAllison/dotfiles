@@ -192,7 +192,7 @@ riverctl map normal Super S spawn 'grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$
 #screenshot selection + edit
 riverctl map normal Super+Shift S spawn 'grim -g "$(slurp)" - | swappy -f -'
 
-#TODO: Add waybar automatically launching
-# waybar &
 #TODO: Figure out if this we are already in an active session so I don't restart wireplumber if it doesn't need to be(screen sharing is already working and I don't need this to break my audio/screen sharing)
 xdg_desktop_for_river_setup
+
+waybar &
