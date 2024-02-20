@@ -1,5 +1,5 @@
 # list of public git repo vars
-set -gx EDITOR nano
+set -gx EDITOR helix
 
 
 

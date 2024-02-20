@@ -8,6 +8,7 @@ if status is-interactive
     # no atuin temporarily. I like native fish up arrow for history more. 
     # TODO: Figure out if it's useful to have activated for storing commands in a way that isn't just up arrow history.
     #atuin init fish | source
+    fish_vi_key_bindings
 
     alias hx="helix"
 
