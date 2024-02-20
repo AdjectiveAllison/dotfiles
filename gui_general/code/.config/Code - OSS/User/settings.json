@@ -8,5 +8,5 @@
     "editor.inlayHints.enabled": "offUnlessPressed",
     "zig.initialSetupDone": true,
     "git.autofetch": true,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
 }

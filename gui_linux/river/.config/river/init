@@ -177,10 +177,11 @@ riverctl map normal Super+Shift Space spawn 'exec $(tofi-drun)'
 # toggle between dvorak programmer and us with ctrl space.
 # TODO: how to switch displays easily while in programmer dvorak
 # riverctl keyboard-layout -variant "dvorak" "us"
+riverctl keybboard-layout -options "caps:swapescape"
 
-riverctl map normal Super+Shift R spawn 'riverctl keyboard-layout -variant "dvorak" "us"'
+riverctl map normal Super+Shift R spawn 'riverctl keyboard-layout -options "caps:swapescape" -variant "dvorak" "us"'
 
-riverctl map normal Super+Shift P spawn 'riverctl keyboard-layout "us"'
+riverctl map normal Super+Shift P spawn 'riverctl keyboard-layout -options "caps:swapescape" "us"'
 # riverctl keyboard-layout "us"
 
 
