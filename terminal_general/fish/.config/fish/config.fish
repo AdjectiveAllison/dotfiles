@@ -9,6 +9,8 @@ if status is-interactive
     # TODO: Figure out if it's useful to have activated for storing commands in a way that isn't just up arrow history.
     #atuin init fish | source
 
+    alias hx="helix"
+
     starship init fish | source
 end
 
