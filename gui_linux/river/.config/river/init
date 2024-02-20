@@ -97,13 +97,6 @@ all_tags=$(((1 << 32) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
-# Super+Space to toggle float
-# commented to accomodate tofi.
-# riverctl map normal Super Space toggle-float
-
-# Super+F to toggle fullscreen
-riverctl map normal Super F toggle-fullscreen
-
 # Super+{Up,Right,Down,Left} to change layout orientation
 riverctl map normal Super Up    send-layout-cmd rivertile "main-location top"
 riverctl map normal Super Right send-layout-cmd rivertile "main-location right"
@@ -165,19 +158,26 @@ rivertile -view-padding 6 -outer-padding 6 &
 
 #------------------------------------------------------------
 # CUSTOM CHANGES:
+
+# Super+F to toggle float
+riverctl map normal Super F toggle-float
+
+# Super+Shift F to toggle fullscreen
+riverctl map normal Super+Shift F toggle-fullscreen
+
 riverctl focus-follows-cursor normal
 
-#TODO: sunset foot spawn binding after confirming ghostty works consistently.
+# TODO: sunset foot spawn binding after confirming ghostty works consistently.
 riverctl map normal Super Z spawn ghostty
 
-#TODO: Figure out how to map tofirun and drun to the same thing so I don't need two.
+# TODO: Figure out how to map tofirun and drun to the same thing so I don't need two.
 riverctl map normal Super Space spawn 'exec $(tofi-run)'
 riverctl map normal Super+Shift Space spawn 'exec $(tofi-drun)'
 
 # toggle between dvorak programmer and us with ctrl space.
 # TODO: how to switch displays easily while in programmer dvorak
 # riverctl keyboard-layout -variant "dvorak" "us"
-riverctl keybboard-layout -options "caps:swapescape"
+# riverctl keybboard-layout -options "caps:swapescape"
 
 riverctl map normal Super+Shift R spawn 'riverctl keyboard-layout -options "caps:swapescape" -variant "dvorak" "us"'
 
@@ -185,15 +185,13 @@ riverctl map normal Super+Shift P spawn 'riverctl keyboard-layout -options "caps
 # riverctl keyboard-layout "us"
 
 
-# my screenshottings are `grim -g "$(slurp)"` for a specific region and `grim -g "$(slurp)" - | swappy -f -` to annotate it afterwards. and just `grim` to capture it all
-
-#TODO: Consider adding a clipboard version of the grim/slurp combo with wl-clipboard.
+# TODO: Consider adding a clipboard version of the grim/slurp combo with wl-clipboard.
 #screenshot selection
 riverctl map normal Super S spawn 'grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +"%Y-%m-%d_%H-%M-%S_grim.png")'
 #screenshot selection + edit
 riverctl map normal Super+Shift S spawn 'grim -g "$(slurp)" - | swappy -f -'
 
-#TODO: Figure out if this we are already in an active session so I don't restart wireplumber if it doesn't need to be(screen sharing is already working and I don't need this to break my audio/screen sharing)
+# TODO: Figure out if this we are already in an active session so I don't restart wireplumber if it doesn't need to be(screen sharing is already working and I don't need this to break my audio/screen sharing)
 xdg_desktop_for_river_setup
 
 waybar &
