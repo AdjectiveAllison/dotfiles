@@ -3,26 +3,26 @@
 # Author: sainnhe
 # License: MIT License
 
-"type" = "yellow"
+"type" = "blue"
 "constant" = "purple"
 "constant.numeric" = "purple"
-"constant.character.escape" = "orange"
-"string" = "green"
-"string.regexp" = "blue"
+"constant.character.escape" = "green"
+"string" = "yellow"
+"string.regexp" = "green"
 "comment" = "grey0"
 "variable" = "fg0"
-"variable.builtin" = "blue"
+"variable.builtin" = "blue" # consider changing this once I see how it's used
 "variable.parameter" = "fg0"
 "variable.other.member" = "fg0"
-"label" = "aqua"
+"label" = "aqua" # This may be fine, I may actually like the change?
 "punctuation" = "grey2"
 "punctuation.delimiter" = "grey2"
 "punctuation.bracket" = "fg0"
 "keyword" = "red"
-"keyword.directive" = "aqua"
+"keyword.directive" = "aqua" # idk what this is doing either?
 "operator" = "orange"
 "function" = "green"
-"function.builtin" = "blue"
+"function.builtin" = "green"
 "function.macro" = "aqua"
 "tag" = "yellow"
 "namespace" = "aqua"
