@@ -159,11 +159,11 @@ rivertile -view-padding 6 -outer-padding 6 &
 #------------------------------------------------------------
 # CUSTOM CHANGES:
 
-# Super+F to toggle float
-riverctl map normal Super F toggle-float
+# Super+T to toggle float
+riverctl map normal Super T toggle-float
 
-# Super+Shift F to toggle fullscreen
-riverctl map normal Super+Shift F toggle-fullscreen
+# Super+F to toggle fullscreen
+riverctl map normal Super F toggle-fullscreen
 
 riverctl focus-follows-cursor normal
 
@@ -177,7 +177,8 @@ riverctl map normal Super+Shift Space spawn 'exec $(tofi-drun)'
 # toggle between dvorak programmer and us with ctrl space.
 # TODO: how to switch displays easily while in programmer dvorak
 # riverctl keyboard-layout -variant "dvorak" "us"
-# riverctl keybboard-layout -options "caps:swapescape"
+# set default caps for escape even before swapping layouts
+riverctl keybboard-layout -options "caps:swapescape" "us"
 
 riverctl map normal Super+Shift R spawn 'riverctl keyboard-layout -options "caps:swapescape" -variant "dvorak" "us"'
 
