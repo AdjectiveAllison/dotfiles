@@ -73,6 +73,8 @@ local lspOverrides = {
 	["@punctuation.bracket"] = fg(colors.red),
 	["@function.builtin"] = fg(colors.green),
 	["@keyword.import"] = fg(colors.green),
+	["@type.qualifier"] = fg(colors.red),
+	["@attribute.zig"] = fg(colors.red),
 }
 
 return {

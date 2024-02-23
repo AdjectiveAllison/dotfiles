@@ -7,14 +7,27 @@ foreground= d4be98
 keybind = ctrl+z=close_surface
 #keybind = ctrl+d=new_split:right
 
+gtk-titlebar = false
+confirm-close-surface = false
+mouse-hide-while-typing = true
+gtk-single-instance = true
+copy-on-select = clipboard
+
+
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:bottom
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+
+keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+shift+l=next_tab
+
+keybind = ctrl+shift+o=new_split:right
+keybind = ctrl+shift+e=new_split:down
+keybind = ctrl+shift+w=close_surface
 # Empty values reset the configuration to the default value
 
 font-family = OxygenMono Nerd Font
-
-# Colors can be changed by setting the 16 colors of `palette`, which each color
-# being defined as regular and bold.
-#
-# black
 
 # Set based on gruvbox-material ansi colors.
 palette = 0=#32302f
