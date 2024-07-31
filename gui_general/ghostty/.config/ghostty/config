@@ -27,7 +27,7 @@ keybind = ctrl+shift+e=new_split:down
 keybind = ctrl+shift+w=close_surface
 # Empty values reset the configuration to the default value
 
-font-family = OxygenMono Nerd Font
+font-family = LiterationMono Nerd Font
 
 # Set based on gruvbox-material ansi colors.
 palette = 0=#32302f
