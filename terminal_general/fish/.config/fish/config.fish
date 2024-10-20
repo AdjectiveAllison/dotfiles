@@ -11,6 +11,13 @@ if status is-interactive
     fish_vi_key_bindings
 
     alias hx="helix"
+    alias coco="bunx code-contextor"
+		alias gst="git status"
+		alias gcm="git commit"
+		alias ga="git add"
+		alias gaa="git add ."
+		alias zb="zig build"
+		alias zbr="zig build run"
 
     starship init fish | source
 end
