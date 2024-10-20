@@ -16,6 +16,8 @@ if status is-interactive
 		alias gcm="git commit"
 		alias ga="git add"
 		alias gaa="git add ."
+		alias gp="git push"
+    alias gps="git push --set-upstream origin (git rev-parse --abbrev-ref HEAD)"
 		alias zb="zig build"
 		alias zbr="zig build run"
 
