@@ -12,7 +12,7 @@ confirm-close-surface = false
 mouse-hide-while-typing = true
 gtk-single-instance = true
 copy-on-select = clipboard
-window-decoration = false
+window-decoration = true
 
 keybind = alt+h=goto_split:left
 keybind = alt+j=goto_split:bottom
