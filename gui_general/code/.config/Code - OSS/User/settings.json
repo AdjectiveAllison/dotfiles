@@ -9,4 +9,5 @@
     "zig.initialSetupDone": true,
     "git.autofetch": true,
     "editor.wordWrap": "on",
+    "keyboard.dispatch": "keyCode",
 }
