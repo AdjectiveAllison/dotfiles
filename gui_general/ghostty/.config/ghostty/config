@@ -27,7 +27,9 @@ keybind = ctrl+shift+e=new_split:down
 keybind = ctrl+shift+w=close_surface
 # Empty values reset the configuration to the default value
 
-font-family = LiterationMono Nerd Font
+font-family = BerkeleyMono
+
+keybind = global:cmd+grave_accent=toggle_quick_terminal
 
 # Set based on gruvbox-material ansi colors.
 palette = 0=#32302f
